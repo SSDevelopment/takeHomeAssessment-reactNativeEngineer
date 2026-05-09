@@ -123,4 +123,4 @@ Good luck — have fun with it.
 
 - My general plan was to hit the first three and get them implamented solidly and then break them up into seperate components. It would help with the reusage of much of those items (First pass I was going to build a component that took the dice data and would build a roller that would show either the amoutn of die rolled or the sides of dice. Logic was similar and would not be an issue to extract out). 
 
--Disapoointed that the debugging/figuring out the gem issue ate up all of my time and was not able to get the persistance in and tested. 
+- Disapointed that the debugging/figuring out the gem issue ate up all of my time and was not able to get the persistance in and tested. I wish that issue was fixed quickly and I could have show off the rest of what I can do. Other than that I would have gone about it the same way as getting things out that work are best. 

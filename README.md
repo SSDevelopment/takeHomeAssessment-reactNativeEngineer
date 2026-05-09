@@ -110,3 +110,17 @@ Things we pay attention to, roughly in order:
 We are *not* judging visual design. A clean, plain UI is perfect.
 
 Good luck — have fun with it.
+
+## Dex's Notes
+
+- Added expo TextField little more on brand with iOS as it matchs
+
+-Use MMKV for persistance storage with roll history being simple string. Any larger items would move to more complex for handling objects, but for this example mmkv is best. SQlite would be a solid choice for something requiring a larger object/data source and I was hoping to switch to that when MMKV was causing a very large headache.
+
+- For some reason that I spent way to much time on, I was not able to get MMKV or SQLite to run (Appears to be an issue with Ruby Gems and CocoaPods CLI that is a known issue). I was not able to get to part three but I was going to have the app pull down data either from local storage and intialize using a useEffect to have the 5 past rolls pull up, I was also going to have that save to the storage (either local(MMKV) or SQLite) after a small amount of time to slow up call to the db and optizmize the write method. 
+
+- I wanted to add an animations for the numbers with the side of the dice showing in the number pattern ( ie 4 sides would show 4 different numbers and a 20 side would show 20 different numbers.) The history issue proved to be taking to long and I never got to it.
+
+- My general plan was to hit the first three and get them implamented solidly and then break them up into seperate components. It would help with the reusage of much of those items (First pass I was going to build a component that took the dice data and would build a roller that would show either the amoutn of die rolled or the sides of dice. Logic was similar and would not be an issue to extract out). 
+
+-Disapoointed that the debugging/figuring out the gem issue ate up all of my time and was not able to get the persistance in and tested. 
